@@ -3,6 +3,9 @@
 /*Import Saved Variables*/
 @import 'core/variables';
 
+/*Import Icons*/
+@import 'core/icons';
+
 *{
     font-family: 'Graphik','Helvetica Nueue', sans-serif;
 }
@@ -11,3 +14,30 @@ html {
     font-size: 62.5%;
 }
 
+i {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar__profile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    border-radius: 0.5rem; 
+
+    &--sm {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &--large {
+        width: 4rem;
+        height: 4rem;
+    }
+}
