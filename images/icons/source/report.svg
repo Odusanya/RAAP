@@ -1,0 +1,84 @@
+<svg width="15" height="15" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1946 -4695)" figma:type="canvas">
+<g id="Icon" figma:type="frame">
+<g id="path" figma:type="vector">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(1946 4702.11)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(1946 4702.11)" fill="#7C86A2"/>
+</g>
+</g>
+<g id="-" figma:type="frame">
+<g id="Line Copy 5" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="translate(1948.45 4705.3)" fill="#7C86A2"/>
+</g>
+</g>
+<g id="path copy" figma:type="vector">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(1953.11 4702.11)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(1953.11 4702.11)" fill="#7C86A2"/>
+</g>
+</g>
+<g id="x" figma:type="frame">
+<g id="Line Copy 5" figma:type="vector">
+<use xlink:href="#path3_stroke" transform="translate(1955.93 4704.93)" fill="#7C86A2"/>
+</g>
+<g id="Line Copy 5" figma:type="vector">
+<use xlink:href="#path4_stroke" transform="translate(1955.93 4704.93)" fill="#7C86A2"/>
+</g>
+</g>
+<g id="path" figma:type="vector">
+<mask id="mask2_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(1946 4695)"/>
+</mask>
+<g mask="url(#mask2_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(1946 4695)" fill="#7C86A2"/>
+</g>
+</g>
+<g id="+" figma:type="frame">
+<g id="Line Copy 5" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="translate(1948.45 4698.2)" fill="#7C86A2"/>
+</g>
+<g id="Line Copy 5" figma:type="vector">
+<use xlink:href="#path5_stroke" transform="translate(1949.95 4697.45)" fill="#7C86A2"/>
+</g>
+</g>
+<g id="path copy" figma:type="vector">
+<mask id="mask3_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(1953.11 4695)"/>
+</mask>
+<g mask="url(#mask3_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(1953.11 4695)" fill="#7C86A2"/>
+</g>
+</g>
+<g id="%" figma:type="frame">
+<g id="Line Copy 5" figma:type="vector">
+<use xlink:href="#path3_stroke" transform="translate(1955.99 4697.89)" fill="#7C86A2"/>
+</g>
+<g id="Oval 3" figma:type="vector">
+<use xlink:href="#path6_fill" transform="translate(1957.8 4697.45)" fill="#7C86A2"/>
+<use xlink:href="#path7_stroke" transform="translate(1957.8 4697.45)" fill="#7C86A2"/>
+</g>
+<g id="Oval 3" figma:type="vector">
+<use xlink:href="#path6_fill" transform="translate(1955.55 4699.7)" fill="#7C86A2"/>
+<use xlink:href="#path7_stroke" transform="translate(1955.55 4699.7)" fill="#7C86A2"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 1C 0 0.447715 0.447715 0 1 0L 6.89474 0C 7.44702 0 7.89474 0.447715 7.89474 1L 7.89474 6.89474C 7.89474 7.44702 7.44702 7.89474 6.89474 7.89474L 1 7.89474C 0.447715 7.89474 0 7.44702 0 6.89474L 0 1Z"/>
+<path id="path1_stroke_2x" d="M 1 1L 6.89474 1L 6.89474 -1L 1 -1L 1 1ZM 6.89474 1L 6.89474 6.89474L 8.89474 6.89474L 8.89474 1L 6.89474 1ZM 6.89474 6.89474L 1 6.89474L 1 8.89474L 6.89474 8.89474L 6.89474 6.89474ZM 1 6.89474L 1 1L -1 1L -1 6.89474L 1 6.89474ZM 1 -1C -0.10457 -1 -1 -0.10457 -1 1L 1 1L 1 -1ZM 6.89474 1L 8.89474 1C 8.89474 -0.10457 7.99931 -1 6.89474 -1L 6.89474 1ZM 6.89474 6.89474L 6.89474 8.89474C 7.99931 8.89474 8.89474 7.99931 8.89474 6.89474L 6.89474 6.89474ZM 1 6.89474L -1 6.89474C -1 7.99931 -0.10457 8.89474 1 8.89474L 1 6.89474Z"/>
+<path id="path2_stroke" d="M 0 0.25C -0.276142 0.25 -0.5 0.473858 -0.5 0.75C -0.5 1.02614 -0.276142 1.25 0 1.25L 0 0.25ZM 3 1.25C 3.27614 1.25 3.5 1.02614 3.5 0.75C 3.5 0.473858 3.27614 0.25 3 0.25L 3 1.25ZM 0 1.25L 3 1.25L 3 0.25L 0 0.25L 0 1.25Z"/>
+<path id="path3_stroke" d="M 0.353553 -0.353553C 0.158291 -0.548816 -0.158291 -0.548816 -0.353553 -0.353553C -0.548816 -0.158291 -0.548816 0.158291 -0.353553 0.353553L 0.353553 -0.353553ZM 1.76777 2.47487C 1.96303 2.67014 2.27961 2.67014 2.47487 2.47487C 2.67014 2.27961 2.67014 1.96303 2.47487 1.76777L 1.76777 2.47487ZM -0.353553 0.353553L 1.76777 2.47487L 2.47487 1.76777L 0.353553 -0.353553L -0.353553 0.353553Z"/>
+<path id="path4_stroke" d="M 2.47487 0.353553C 2.67014 0.158291 2.67014 -0.158291 2.47487 -0.353553C 2.27961 -0.548816 1.96303 -0.548816 1.76777 -0.353553L 2.47487 0.353553ZM -0.353553 1.76777C -0.548816 1.96303 -0.548816 2.27961 -0.353553 2.47487C -0.158291 2.67014 0.158291 2.67014 0.353553 2.47487L -0.353553 1.76777ZM 1.76777 -0.353553L -0.353553 1.76777L 0.353553 2.47487L 2.47487 0.353553L 1.76777 -0.353553Z"/>
+<path id="path5_stroke" d="M 0.5 1.11022e-16C 0.5 -0.276142 0.276142 -0.5 7.77156e-16 -0.5C -0.276142 -0.5 -0.5 -0.276142 -0.5 -1.11022e-16L 0.5 1.11022e-16ZM -0.5 3C -0.5 3.27614 -0.276142 3.5 -1.11022e-16 3.5C 0.276142 3.5 0.5 3.27614 0.5 3L -0.5 3ZM -0.5 -1.11022e-16L -0.5 3L 0.5 3L 0.5 1.11022e-16L -0.5 -1.11022e-16Z"/>
+<path id="path6_fill" fill-rule="evenodd" d="M 0.375 0.75C 0.582107 0.75 0.75 0.582107 0.75 0.375C 0.75 0.167893 0.582107 0 0.375 0C 0.167893 0 0 0.167893 0 0.375C 0 0.582107 0.167893 0.75 0.375 0.75Z"/>
+<path id="path7_stroke" d="M 0.375 1C 0.720178 1 1 0.720178 1 0.375L 0.5 0.375C 0.5 0.444036 0.444036 0.5 0.375 0.5L 0.375 1ZM 1 0.375C 1 0.029822 0.720178 -0.25 0.375 -0.25L 0.375 0.25C 0.444036 0.25 0.5 0.305964 0.5 0.375L 1 0.375ZM 0.375 -0.25C 0.029822 -0.25 -0.25 0.029822 -0.25 0.375L 0.25 0.375C 0.25 0.305964 0.305964 0.25 0.375 0.25L 0.375 -0.25ZM -0.25 0.375C -0.25 0.720178 0.029822 1 0.375 1L 0.375 0.5C 0.305964 0.5 0.25 0.444036 0.25 0.375L -0.25 0.375Z"/>
+</defs>
+</svg>
