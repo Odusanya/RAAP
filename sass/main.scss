@@ -1,12 +1,13 @@
 /*Import Core*/
+
 @import 'core/reset-min';
 @import 'core/fonts';
 @import 'core/variables';
 @import 'core/mixin';
 
 /*Import Core*/
-@import 'components/icons';
 
+@import 'components/icons';
 * {
     font-family: 'Graphik', 'Helvetica Nueue', sans-serif;
 }
@@ -24,42 +25,42 @@ a {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    color: #7C86A2;
 }
 
 hr {
     height: 0.1rem;
     width: 12rem;
-    background-color: #DFF7FF;
-    margin-left: -0.3rem;
+    background-color: $color-border-blue;
 }
+
 img {
     border-radius: 0.5rem;
 }
 
 .l-sidebar {
-    padding-left: 3rem;
-
     width: 23rem;
+    @include box-shadow (0, 0.2rem, 1rem, rgba($color-shadow, 0.1));
     &__top {
         height: 8rem;
         display: flex;
-        margin-left: -3rem;
+        padding-left: 3rem;
         padding-left: inherit;
-        @include box-shadow (0, 0.2rem, 1rem, rgba($color-shadow,0.1));
+        @include box-shadow (0, 0.2rem, 1rem, rgba($color-shadow, 0.1));
         align-items: center;
+        justify-content: center;
     }
     &__profile {
-    display: inline-flex;
-    align-items: center;
-    padding: 3rem 0 5rem 0;
+        display: inline-flex;
+        align-items: center;
+        padding: 3rem 0 5rem 3rem;
     }
-}   
-
-
+}
 
 .sidebar {
     font-size: 1.4rem;
     background-color: #fff;
+    height: 100%;
 }
 
 .profile-img {
@@ -82,21 +83,25 @@ img {
     position: relative;
     .l-nav-item {
         height: 8rem;
-        /* */
+        padding-left: 3rem;
         display: flex;
         align-contents: center;
-        &:active, &:visited {
+        &:active,
+        &:visited,
+        &:link {
             font-weight: bold;
+            border-left: 0.7rem solid #3BB75E;
         }
-
-        :last-of-class {
-        position: fixed;
-        bottom: 0;
-        }
-        &__logout {
+        &:last-child {
             position: fixed;
             bottom: 0;
-            left: 0;
+            width: 23rem;
+            background-color: #0BA4D9;
+            background-image: linear-gradient( to top right, #0BA4D9, #4CC0E8);
+            border: none;
+        }
+        span {
+            color: $color-white;
         }
     }
 }
