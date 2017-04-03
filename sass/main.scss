@@ -88,7 +88,8 @@ img {
         align-contents: center;
         &:active,
         &:visited,
-        &:link {
+        &:link,
+        &:focus {
             font-weight: bold;
             border-left: 0.7rem solid #3BB75E;
         }
