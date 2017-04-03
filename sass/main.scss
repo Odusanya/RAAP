@@ -91,8 +91,16 @@ img {
         &:link,
         &:focus {
             font-weight: bold;
-            border-left: 0.7rem solid #3BB75E;
+            
         }
+        &:after {
+            content: '';
+            background-color: #3BB75E;
+            height: 0.7rem;
+            position: absolute;
+            left: 0;
+       }
+
         &:last-child {
             position: fixed;
             bottom: 0;
