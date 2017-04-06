@@ -27,7 +27,7 @@ a {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    color: #7C86A2;
+    color: #fff;
 }
 
 hr {
@@ -40,24 +40,31 @@ img {
     border-radius: 0.5rem;
 }
 
+.wrapper {
+    display: flex;
+}
+
+
+.icons {
+    // display: flex;
+    // justify-content: center;
+    margin-right: 1rem;
+}
+
 .l-sidebar {
-    width: 18%;
-    min-width: 13rem;
+    flex: 1;
+    min-width: 18rem;
     @include box-shadow (0, 0.2rem, 1rem, rgba($color-shadow, 0.1));
     height: 100%;
-    /* Full height */
-    position: fixed;
     /* Make it stick, even on scroll */
     overflow: auto;
     /* Enable scrolling if the sidenav has too much content */
     &__top {
         height: 8rem;
         display: flex;
-        padding-left: 3rem;
-        padding-left: inherit;
         @include box-shadow (0, 0.2rem, 1rem, rgba($color-shadow, 0.1));
         align-items: center;
-        justify-content: center;
+        padding-left: 3rem;
     }
     &__profile {
         display: inline-flex;
@@ -68,6 +75,7 @@ img {
 }
 
 .sidebar {
+    float: left;
     font-size: 1.4rem;
     background-color: #fff;
 }
@@ -83,6 +91,12 @@ img {
     }
 }
 
+.logo {
+    // border: 3px solid red;
+    display: flex;
+    align-items: center;
+}
+
 .profile-name {
     margin-left: 1.5rem;
     color: #9B9B9B;
@@ -90,21 +104,27 @@ img {
 
 .nav {
     position: relative;
-    
     .l-nav-item {
         height: 8rem;
         padding-left: 3rem;
         display: flex;
         align-contents: center;
         border-left: 8px solid transparent;
-        
+        font-size: 1.6rem;
+        letter-spacing: -2.08%;
+        a {
+            color: #7C86A2;
+        }
+        svg {
+            use {
+                fill: #7C86A2;
+            }
+        }
         &:last-child {
             position: fixed;
             bottom: 0;
             width: 18%;
             min-width: 13rem;
-            background-color: #0BA4D9;
-            background-image: linear-gradient( to top right, #0BA4D9, #4CC0E8);
             border: none;
         }
         span {
@@ -114,18 +134,24 @@ img {
     .active {
         border-left: 8px solid $color-green;
         font-weight: bold;
+        a {
+            color: #011B33;
+        }
+        svg {
+            use {
+                fill: #011B33;
+            }
+        }
     }
 }
 
-.l-content-container {
-    margin-left: 18%;
-    width: 37.5%;
-}
-
 .request {
+    float: left;
+    min-width: 48rem;
     background-color: #F0F4F6;
     display: flex;
     flex-direction: column;
+    flex: 2;
 }
 
 button,
@@ -145,27 +171,42 @@ button,
     padding-right: 1.5em;
     position: relative;
     text-decoration: none;
-    transition-duration: 250ms;
-    transition-property: background, box-shadow, color, transform;
-    transition-timing-function: ease-in-out;
     user-select: none;
+    a {
+        color: #fff;
+
+    }
 }
+.dropbtn {
+    background-color: #F0FFF4;
+    border: 1px solid #CBF5D6;
+    font-size: 1.1rem;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+.btn__icons {
+        padding-left: 15px;
+    }
 
 l-button {
     margin-bottom: 2rem;
+
 }
 
 .upper-section {
     width: inherit;
     display: flex;
     justify-content: space-between;
-
 }
 
 .l-upper-section {
     margin-bottom: 2rem;
     padding: 3rem 3rem 0 3rem;
-    position: relative; 
+    position: relative;
     clear: both;
     width: inherit;
     z-index: 2;
@@ -174,9 +215,13 @@ l-button {
 .main-content {
     padding-left: 3rem;
     padding-right: 3rem;
-    height: 100vh;
+    height: 90vh;
     flex-grow: 1;
     overflow: auto;
+    &::-webkit-scrollbar-thumb {
+        display: none;
+        z-index: 10;
+    }
     .message-box {
         background-color: #fff;
         padding: 1.5rem;
@@ -191,6 +236,33 @@ l-button {
             }
             &--right {
                 float: right;
+                text-align: right;
+                .msg__time {
+                    font-size: 1.1rem;
+                    margin-bottom: 7px;
+                    color: #B2B2BA;
+                }
+                .request__price {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    color: #09A5DB;
+                }
+            }
+            &--left {
+                display: flex;
+                flex-flow: row wrap;
+                .msg__sender {
+                    flex-basis: 100%;
+                    margin-bottom: 4px;
+                    color: #011B33;
+                }
+                .msg__content {
+                    font-size: 1.2rem;
+                    max-width: 25rem;
+                    flex-basis: 100%;
+                    line-height: 1.26;
+                    color: #071D31;
+                }
             }
         }
     }
@@ -198,7 +270,47 @@ l-button {
 
 .l-message-box {
     width: auto;
-    min-height: 1.8rem;
     display: flex;
-    min-height: 8.8rem;
+    border-bottom: 1px solid #DFF7FF;
+    &:first-child {
+        border-radius: 5px 5px 0 0;
+    }
+    &:last-child {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+.aside {
+    flex: 2.5;
+    float: left;
+    min-width: 57rem;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    &--is-empty{
+        display: flex;
+    }
+}
+
+
+.request-box {
+    width: 100%;
+    height: 19.5rem;
+    @include box-shadow (0, 0.2rem, 1rem, rgba($color-shadow, 0.1));
+    align-self: flex-start;
+    padding: 3rem 3rem 2rem 3rem;
+
+    .request-top {
+        display: flex;
+
+        .request__by {
+            color: $color-blue;
+            font-size: 1rem;
+        }
+        .request__time {
+
+        }
+    }
+    
 }
