@@ -15,6 +15,7 @@
 html {
     font-size: 62.5%;
     height: 100%;
+    overflow: hidden;
 }
 
 i {
@@ -158,12 +159,12 @@ l-button {
     width: inherit;
     display: flex;
     justify-content: space-between;
+
 }
 
 .l-upper-section {
     margin-bottom: 2rem;
-    padding-top: 3rem;
-    padding-left: 3rem;
+    padding: 3rem 3rem 0 3rem;
     position: relative; 
     clear: both;
     width: inherit;
@@ -171,9 +172,18 @@ l-button {
 }
 
 .main-content {
-    // height: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 100vh;
     flex-grow: 1;
     overflow: auto;
+   /* &::webkit-scrollbar {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; 
+    } */
     .message-box {
         background-color: #fff;
         padding: 1.5rem;
