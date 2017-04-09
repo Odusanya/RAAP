@@ -309,7 +309,7 @@ l-button {
         @include box-shadow (0, 0.2rem, 1rem, rgba($color-shadow, 0.1));
         align-self: flex-start;
         padding: 3rem 3rem 2rem 3rem;
-        position: relative;
+        // position: relative;
         clear: both;
         z-index: 2;
         .box-top {
@@ -333,6 +333,12 @@ l-button {
             .request__category {
                 color: #09A5DB;
                 font-size: 1.1rem;
+                width: 8.4rem;
+                height: 2.4rem;
+                border-radius: 5px;
+                margin-left: 1rem;
+                display: flex;
+                align-items: center;
             }
         }
         .box-middle {
@@ -341,10 +347,11 @@ l-button {
             justify-content: space-between;
             .request__description {
                 font-size: 1.6rem;
-                max-width: 34.7rem;
+                max-width: 70%;
                 flex-basis: 100%;
                 line-height: 1.16;
                 color: #071D31;
+                margin-bottom: 1.5rem;
             }
             .request__price {
                 font-size: 1.6rem;
@@ -352,6 +359,34 @@ l-button {
                 font-weight: bold;
                 color: #09A5DB;
                 text-align: right;
+            }
+        }
+        .request__cta {
+            display: flex;
+            flex-basis: 34.7rem;
+            // justify-content: space-between;
+            margin-bottom: 2rem;
+            .button {
+                width: 16rem;
+                height: 4rem;
+                display: flex;
+                justify-content: center;
+                font-size:1.2rem;
+                margin-right: 1rem;
+
+                &--accept {
+                    background-color: #F0FFF4;
+                    border: 1px solid #CBF5D6;
+                    color: #3BB75E;
+                }
+                &--decline {
+                    background-color: #FCE9E9;
+                    border: 1px solid #FFD1D7;
+                    color: #FF0000;
+                }
+                &--is-accepted {
+
+                }
             }
         }
     }
@@ -364,8 +399,9 @@ l-button {
             border: 1px solid #D6F4FF;
             padding: 1rem 2rem;
             border-radius: 0.5rem;
-            width: 70%;
+            width: 75%;
             background-color: #F6FCFF;
+            font-size:1.4rem;
             &--reply {
                 float: right;
             }
@@ -374,20 +410,31 @@ l-button {
                 justify-content: space-between;
                 width: 100%;
                 padding-bottom: 1.5rem;
-                border-bottom: 2px solid #EEE;
+                padding-top: 1rem;
+                border-bottom: 1px solid #EEE;
                 align-content: baseline;
+                font-size: 1.4rem;
                 .request__sender {
-                    border: 3px solid red;
+                   
                     align-self: center;
+                    color: #011B33;
+                    font-weight: bold;
                 }
                 .request__time {
-                    border: 3px solid green;
-                    font-size: 1.4rem;
+                   
+                    font-size: 1.1rem;
+                    margin: auto 0;
+                    color: #B2B2BA;
+                    // display: flex;
+                    // margin: auto;
                 }
             }
             .request__text {
-                padding-top: 1.5rem;
-                color: #071D31;
+                    padding: 1.3rem 0 0.8rem 0;
+                    line-height: 1.30;
+                    color: #071D31;
+                    font-size: 1.4rem;
+                    
             }
         }
     }
@@ -395,14 +442,11 @@ l-button {
         display: flex;
         width: 100%;
         padding: 3rem;
-        
         float: left;
-        
+        background-color: #fff;
         svg {
-            
-            background-color: #fff;
+            // background-color: #fff;
         }
-        
         input {
             flex: 1;
             background-color: #F6FCFF;
@@ -411,18 +455,18 @@ l-button {
             border-bottom: 1px solid #DFF7FF;
             text-indent: 1.5rem;
             font-size: 1.2rem;
-            :placeholder {
-                color: red;
-            }
+            outline: none;
         }
         .button {
-            align-self: stretch;
             display: flex;
-            margin: auto;
-            height: inherit;
+            align-items: center;
             background-color: #09A5DB;
             border: 1px solid #0682AD;
+            // border: 3px solid green;
             border-radius: 5px;
+            font-size: 1.4rem;
+            color: #fff;
+            height: auto;
         }
     }
 }
